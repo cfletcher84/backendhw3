@@ -1,0 +1,98 @@
+# # Problem 1, task 1
+
+grades = [85, 90, 78, 88, 76, 95, 89, 80, 72, 93]
+grades.sort(reverse=True)
+print(grades)
+
+# Task 2
+
+list_length = len(grades)
+list_sum = sum(grades)
+list_average = list_sum/list_length 
+print(list_average)
+
+# Task 3
+
+grades[6] = "Fail"
+grades[7] = "Fail"
+grades[8] = "Fail"
+grades[9] = "Fail"
+print(grades)
+
+
+# Question 2 Task 1
+
+submitted = ["Alice", "Bob", "Charlie", "David"]
+attended = ["Charlie", "Eve", "Alice", "Frank"]
+did_both = []
+did_both_list = []
+full_list = submitted + attended
+
+for i in full_list:
+    if i not in did_both:
+        did_both.append(i)
+    else:
+        did_both_list.append(i)
+    
+print("These students attended and submitted: " + str(did_both_list))
+
+#  Task 2
+
+print(submitted == attended)
+
+
+# Task 3
+
+submitted = ["Alice", "Bob", "Charlie", "David"]
+attended = ["Charlie", "Eve", "Alice", "Frank"]
+full_list = attended + submitted
+print(full_list)
+full_list.remove("Charlie")
+full_list.remove("Charlie")
+full_list.remove("Alice")
+full_list.remove("Alice")
+full_list.remove("Bob")
+full_list.remove("David")
+print("These students did not submit: " + str(full_list))
+
+
+# Problem 3 Task 1
+
+temperatures = [72, 75, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106]
+week2 = temperatures[7:14]
+print(week2)
+
+
+# Task 2
+
+above_100 = temperatures[23:]
+print(above_100)
+
+# Task 3
+
+temperatures = [72, 75, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106]
+temperatures.sort(reverse=True)
+reverse_slice = temperatures[5:10]
+print(temperatures)
+print(reverse_slice)
+
+# Question 4 Task 1w
+
+students = ["John", "Doe", "Jane", "Smith"]
+grades = [85, 90, 78, 88]
+activities = ["Football", "Music", "Art", "Dance"]
+
+name = students.pop(2)
+grade = grades.pop(2)
+activity = activities.pop(2)
+
+print(f"Student: {name}, failed {activity}, with a {grade}")
+
+# Task 2
+
+students_approved = students
+
+# Task 3
+
+print(students)
+
